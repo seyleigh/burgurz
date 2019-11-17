@@ -31,7 +31,7 @@ Burger.create = function (burger) {
 
 Burger.updateDevoured = function (burgerId) {
     return new Promise((resolve, reject) => {
-        orm.updateOne("burgers", "DEVOURED", true, "ID", burgerId).then(results => {
+        orm.updateOne("burgers", "devoured", true, "ID", burgerId).then(results => {
             resolve(results);
         }).catch(() => {
             reject("Could not update burger");
