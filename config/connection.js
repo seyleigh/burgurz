@@ -1,5 +1,4 @@
 const mysql = require("mysql");
-
 let connection;
 
 if (process.env.JAWSDB_URL) {
@@ -12,7 +11,7 @@ if (process.env.JAWSDB_URL) {
         port: 3306,
         password: "whoops"
     });
-}
+};
 
 
 module.exports = connection;
