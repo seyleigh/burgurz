@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+html {
+    min-height: 100%;
+    background: #222222;
+}
+
+body {
+  height: 980px;
+  background: linear-gradient(120deg, #666666 0%, #000000 95%);
+  
+}
+.card-header, .card {
+    background: linear-gradient(120deg, #74ebd5 0%, #ACB6E5 95%);
+}
+.card-header, .devour-btn {
+    color: #000;
+}
+
+.card {
+    border: none;
+}
+
+.scroll {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+h4, h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #9ca6de;
+    text-shadow: 2px 3px #5a5a5a
+    /* text-shadow:1px 1px 10px #979696, 1px 1px 10px #ccc; */
+}
+
+h6 {
+    color: #fff;
+}

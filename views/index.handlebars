@@ -1,0 +1,36 @@
+{{!-- <div class="jumbotron"> --}}
+    <div class="text-center pt-5">
+        <h1>Eat-That-Burger!</h1>
+    </div>
+{{!-- </div> --}}
+<div class="container mt-5">
+    {{!-- <div class="row text-center offset-md-4 mb-5">
+        <h6 class="col-6">
+            Got the hunger? Enter in a burger of your choosing then see it appear on the list to the left. All thats left is to devour your creation! 
+        </h6>
+    </div> --}}
+     <div class="row">
+
+         <h6 class="col-6">
+            Virtually hungry? Enter in a burger of your choosing then see it appear on the list to the left. All thats left is to devour your delicious creation! 
+        </h6>
+
+        <div class="col-md-6">
+            <div class="input-group mb-5">
+                <input type="text" class="form-control" placeholder="Create your burger" id="burgerName">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light" type="submit" id="addBurger"><i class="fas fa-check"></i> Grill it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            {{> uneaten-burger }}
+        </div>
+        <div class="col">
+            {{> burger-list }}
+        </div>
+    </div>
+</div>
