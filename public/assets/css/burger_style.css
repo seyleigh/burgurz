@@ -13,7 +13,7 @@ body {
 .card-header, .card {
     background: linear-gradient(120deg, #74ebd5 0%, #ACB6E5 95%);
 }
-.card-header, .devour-btn {
+.card-header, .devour-btn, .delete-btn {
     color: #000;
 }
 
@@ -39,4 +39,5 @@ h1 {
 
 h6 {
     color: #fff;
+    font-size: .9rem;
 }
