@@ -11,7 +11,7 @@ This is an app that utilises:
 
 ---
 
-## [Link to Heroku](https://notbobsburgers.herokuapp.com/)
+## [Link to Heroku](https://mighty-lake-47636.herokuapp.com/)
 
 ---
 

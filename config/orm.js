@@ -14,7 +14,7 @@ const orm = {
         });
     },
     createOne: function (tableName, obj) {
-        const query = `INSERT INTO BURGERS SET ?`;
+        const query = `INSERT INTO burgers SET ?`;
         return new Promise((resolve, reject) => {
             connection.query(query, obj, (err, results) => {
                 if (err) {
@@ -37,7 +37,7 @@ const orm = {
                     resolve(results);
                 }
 
-                console.log(tableName)
+                // console.log(tableName)
 
                 // console.log(tableName, updCol, updVal, idCol, objId)
             });
