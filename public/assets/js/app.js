@@ -1,4 +1,4 @@
-const app = {
+let app = {
     devourBurger: function (id) {
         $.ajax({
             url: `/api/burger/${id}`,
@@ -28,11 +28,11 @@ const app = {
         $(".delete-btn").on("click", function (){
             let id = $(this).data("id");
             app.deleteBurger(id);
-            console.log(id);
+            // console.log(id);
         });
 
 
-        $("#addBurger").on("submit", function (event) {  
+        $("#addBurger").on("click", function (event) {  
             event.preventDefault();
             const data = {
                 name: $("#burgerName").val()

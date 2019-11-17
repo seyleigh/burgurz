@@ -42,7 +42,7 @@ const orm = {
                 // console.log(tableName, updCol, updVal, idCol, objId)
             });
         });
-    },//jenseys added bit
+    },
     deleteOne: function (tableName, idCol, objId) {
         const query = "DELETE FROM ?? WHERE ?? = ?";
         return new Promise((resolve, reject) => {
@@ -54,7 +54,7 @@ const orm = {
                 }
             })
         })
-    } //end jenseys added bit
+    } 
 
 };
 

@@ -3,7 +3,6 @@ const Burger = require("../models/burger");
 
 routes.get("/", function (req, res) {
     Burger.selectBurgers().then(result => {
-        // Populate results based on devoured status
         let devoured = result.filter(b => b.devoured === 1);
         let undevoured = result.filter(b => b.devoured === 0);
         res.render("index", {
@@ -43,7 +42,6 @@ routes.put("/api/burger/:id", (req, res) => {
     });
 });
 
-// jenseys added bit
 routes.delete("/api/burger/:id", (req, res) => {
     Burger.delete(req.params.id).then(result => {
         res.json(result);
@@ -51,6 +49,6 @@ routes.delete("/api/burger/:id", (req, res) => {
         res.status(500).send({error: err});
     });
 });
-// end jenseys added bit
+
 
 module.exports = routes;

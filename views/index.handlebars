@@ -4,20 +4,22 @@
     </div>
 {{!-- </div> --}}
 <div class="container mt-5">
-    {{!-- <div class="row text-center offset-md-4 mb-5">
-        <h6 class="col-6">
-            Got the hunger? Enter in a burger of your choosing then see it appear on the list to the left. All thats left is to devour your creation! 
-        </h6>
-    </div> --}}
-     <div class="row">
-
-         <h6 class="col-6">
+    <div class="row text-center offset-md-2 mb-5">
+        <h1 class="mb-2"><i class="fas fa-chevron-left"></i></h1>
+        <h6 class="col-8 pt-4">
             Virtually hungry? Enter in a burger of your choosing and it'll appear on the list to the left. Then you can devour your delicious creation! If you're ashamed of how many burgers you've eaten - or if the list is getting a little long you can also delete the devoured burger from a table.
         </h6>
+        <h1><i class="fas fa-chevron-right"></i></h1>
+    </div>
+     <div class="row">
 
-        <div class="col-md-6">
+         {{!-- <h6 class="col-6">
+            Virtually hungry? Enter in a burger of your choosing and it'll appear on the list to the left. Then you can devour your delicious creation! If you're ashamed of how many burgers you've eaten - or if the list is getting a little long you can also delete the devoured burger from a table.
+        </h6> --}}
+
+        <div class="col-md-6 offset-md-3">
             <div class="input-group mb-5">
-                <input type="text" class="form-control" placeholder="Create your burger" id="burgerName">
+                <input type="text" class="form-control d-block" placeholder="Create your burger" id="burgerName">
                 <div class="input-group-append">
                     <button class="btn btn-outline-light" type="submit" id="addBurger"><i class="fas fa-check"></i> Grill it!</button>
                 </div>
@@ -25,12 +27,12 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col">
-            {{> uneaten-burger }}
-        </div>
-        <div class="col">
-            {{> burger-list }}
+        <div class="row">
+            <div class="col-6">
+                {{> uneaten-burger }}
+            </div>
+            <div class="col-6">
+             {{> burger-list }}
         </div>
     </div>
 </div>
