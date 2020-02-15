@@ -17,6 +17,10 @@ body {
     color: #000;
 }
 
+.delete-btn:hover {
+    background: linear-gradient(146deg, rgba(237,33,58,1) 0%, rgba(147,41,30,1) 100%);
+}
+
 .card {
     border: none;
 }
