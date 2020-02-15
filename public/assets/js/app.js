@@ -27,8 +27,7 @@ let app = {
 
         $(".delete-btn").on("click", function (){
             let id = $(this).data("id");
-            app.deleteBurger(id);
-            // console.log(id);
+            app.deleteBurger(id)
         });
 
 
