@@ -22,8 +22,6 @@ const orm = {
                 } else {
                     resolve(results);
                 }
-
-                // console.log(obj);
             });
         });
     },
@@ -36,10 +34,6 @@ const orm = {
                 } else {
                     resolve(results);
                 }
-
-                // console.log(tableName)
-
-                // console.log(tableName, updCol, updVal, idCol, objId)
             });
         });
     },
