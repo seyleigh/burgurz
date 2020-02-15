@@ -44,6 +44,8 @@ h1 {
 h6 {
     color: #fff;
     font-size: .9rem;
+    line-height: 1.4rem;
+    letter-spacing: .2rem;
 }
 
 .footer {
