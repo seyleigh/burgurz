@@ -55,3 +55,7 @@ h6 {
 a, a:hover {
     color: #9ca6de;
 }
+
+input {
+    background: linear-gradient(120deg, #74ebd5 0%, #ACB6E5 95%)!important;
+}
